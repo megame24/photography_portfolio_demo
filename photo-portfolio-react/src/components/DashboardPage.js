@@ -37,7 +37,7 @@ class DashboardPage extends React.Component {
               <Message.Header>Account Not Yet Verified</Message.Header>
               <p>
                 Your account needs to be verified for you to gain admin
-                previlages. Get a chief admin to verify your account
+                previlages, get a chief admin to verify your account. Re-login after verification.
               </p>
             </Message>
           </div>

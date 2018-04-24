@@ -91,13 +91,6 @@ class Navbar extends React.Component {
                 Logout
               </Menu.Item>
             )}
-            <Menu.Item
-              name="About"
-              active={activeItem === "About"}
-              onClick={this.handleItemClick}
-            >
-              About
-            </Menu.Item>
           </Menu.Menu>
         </div>
       </Menu>

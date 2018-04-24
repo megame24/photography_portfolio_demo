@@ -14,6 +14,7 @@ import NavBar from "./components/Navbar";
 // when connect is used together with react-router
 const App = ({ location }) => (
   <div>
+    <DemoMessage />
     <Route location={location} component={NavBar} />
     <div className="ui container">
       <Switch>

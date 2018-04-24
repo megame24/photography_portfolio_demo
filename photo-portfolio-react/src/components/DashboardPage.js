@@ -9,6 +9,7 @@ import {
 } from "../actions/admins";
 import ManageAdmins from "./ManageAdmins";
 import ManageContent from "./ManageContent";
+import DemoPurpose from "./DemoPurpose";
 
 class DashboardPage extends React.Component {
   componentWillMount = () => {
@@ -40,6 +41,7 @@ class DashboardPage extends React.Component {
                 previlages, get a chief admin to verify your account. Re-login after verification.
               </p>
             </Message>
+            <DemoPurpose message="login as 'username: admin, password: admin' to verify your account" />
           </div>
         )}
         {!enabled && (
@@ -51,6 +53,7 @@ class DashboardPage extends React.Component {
                 mistake, contact a chief admin
               </p>
             </Message>
+            <DemoPurpose message="login as 'username: admin, password: admin' to enable your account" />
           </div>
         )}
         {enabled &&

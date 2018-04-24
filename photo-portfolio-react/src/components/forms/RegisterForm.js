@@ -2,6 +2,7 @@ import React from "react";
 import { PropTypes } from "prop-types";
 import { Form, Button, Message } from "semantic-ui-react";
 import ErrorText from "../ErrorText";
+import DemoPurpose from "../DemoPurpose";
 
 class RegisterForm extends React.Component {
   state = {
@@ -109,7 +110,7 @@ class RegisterForm extends React.Component {
             />
             {errors.answer && <ErrorText error={errors.answer} />}
           </Form.Field>
-
+          <DemoPurpose message="use 'secret' as the admin secret" />
           <Form.Field error={!!errors.secret}>
             <label htmlFor="secret">Admin secret</label>
             <input

@@ -9,6 +9,7 @@ import GuestRoute from "./components/routes/GuestRoute";
 import RegisterPage from "./components/RegisterPage";
 import ResetPasswordPage from "./components/ResetPasswordPage";
 import NavBar from "./components/Navbar";
+import DemoMessage from "./components/DemoMessage";
 
 // we need to pass location to the routes because of react-redux's connect blockers involved
 // when connect is used together with react-router

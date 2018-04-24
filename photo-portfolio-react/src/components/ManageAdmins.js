@@ -25,8 +25,8 @@ class ManageAdmins extends React.Component {
     this.props.enableOrDisableAdmin(username, enableOrDisable);
   };
 
-  tableRows = () => {
-    return this.props.admins.map(admin => {
+  tableRows = () => 
+    this.props.admins.map(admin => {
       const {
         loading,
         verifying,
@@ -90,7 +90,6 @@ class ManageAdmins extends React.Component {
         </Table.Row>
       );
     });
-  };
 
   render() {
     return (
@@ -116,8 +115,9 @@ class ManageAdmins extends React.Component {
 }
 
 ManageAdmins.propTypes = {
-  admins: PropTypes.array.isRequired,
-  verifyAdmin: PropTypes.func.isRequired
+  admins: PropTypes.object.isRequired,
+  verifyAdmin: PropTypes.func.isRequired,
+  enableOrDisableAdmin: PropTypes.func.isRequired
 };
 
 export default ManageAdmins;

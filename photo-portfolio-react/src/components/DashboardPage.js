@@ -79,7 +79,9 @@ DashboardPage.propTypes = {
   alpha: PropTypes.bool.isRequired,
   enabled: PropTypes.bool.isRequired,
   getListOfAdmins: PropTypes.func.isRequired,
-  verifyAdmin: PropTypes.func.isRequired
+  verifyAdmin: PropTypes.func.isRequired,
+  enableOrDisableAdmin: PropTypes.func.isRequired,
+  admins: PropTypes.object.isRequired
 };
 
 function mapStateToProps({ user, admins }) {
@@ -87,7 +89,7 @@ function mapStateToProps({ user, admins }) {
     verified: user.verified,
     alpha: user.alpha,
     enabled: user.enabled,
-    admins: admins
+    admins
   };
 }
 

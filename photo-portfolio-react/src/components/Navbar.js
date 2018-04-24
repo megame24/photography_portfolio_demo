@@ -29,7 +29,7 @@ class Navbar extends React.Component {
         break;
 
       default:
-        return;
+        break;
     }
   };
 
@@ -103,7 +103,8 @@ Navbar.propTypes = {
   logout: PropTypes.func.isRequired,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired
-  }).isRequired
+  }).isRequired,
+  username: PropTypes.string.isRequired
 };
 
 function mapStateToProps({ user }) {

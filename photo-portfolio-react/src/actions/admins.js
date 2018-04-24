@@ -11,8 +11,8 @@ export const getListOfAdmins = () => dispatch =>
         dispatch(listOfAdmins(admins));
     });
 
-export const verifyAdmin = username => dispatch =>
+export const verifyAdmin = username =>
     api.admins.verifyAdmin(username);
 
-export const enableOrDisableAdmin = (username, enableOrDisable) => dispatch =>
+export const enableOrDisableAdmin = (username, enableOrDisable) =>
     api.admins.enableOrDisableAdmin(username, enableOrDisable);
